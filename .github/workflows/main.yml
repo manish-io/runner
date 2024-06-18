@@ -17,4 +17,4 @@ jobs:
         run: echo Hello, world!
 
       - name: Build Docker image
-        run: docker build -t my-image:${{ env.SHA_TAG }} .
+        run: sudo docker build -t my-image:${{ env.SHA_TAG }} .
